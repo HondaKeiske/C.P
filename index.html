@@ -3,81 +3,83 @@
   <head>
     <meta charset="utf-8">
       <title>IWT item CheckPoint</title>
+        <style>
+          .subject{
+            font-weight: bold;
+            color: gray;
+          }
+          #important {
+            font-weight: bold;
+            color:green;
+          }
+
+        </style>
   </head>
     <body>
-    <h1>IWT CheckPoint 'prod.SeungMok'</h1>
-    <input type="button" value="black" onclick="document.querySelecter('body').style.backgroundColor='black';
-      document.querySelecter('body').style.color = 'white';">
+      <h1 style="background-color : coral; color:powderblue;">IWT CheckPoint 'prod.SeungMok'</h1>
+        <span style="color:coral;">-------------------------------------------</span>
+          <h3 style="background-color : coral; color:black;"><u>Background-Color button : </u></h3>
+            <input type="button" value="Mint" onclick="
+              document.querySelector('body').style.backgroundColor='powderblue';
+              document.querySelector('body').style.color = 'white';">
 
-    <input type="button" value="white" onclick="document.querySelecter('body').style.backgroundColor='white';
-      document.querySelecter('body').style.color = 'balck';">
-
-    <button id="alert" onclick="alert" value="prod.IWT">Start</button>
-        <script
-          src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script
-          src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script>
-              $('#alert').click(function(){
-                swal({
-                    title: "Check Point ProJect no.1"
-                    text: "Just press the button Yes or No"
-                    icon: 'Thank you'
-                    button: 'close'
-                });
-              });
-
-        </script>
-        <br>
-        <br>
-        <input type="button" value="Explain" onclick="alert
-        ('Prod. SeungMok')">
+            <input type="button" value="Origin" onclick="
+              document.querySelector('body').style.backgroundColor='white';
+              document.querySelector('body').style.color = 'darkgray';">
+                <br>
+                <br>
+                <span style="color:coral;">-------------------------------------------</span>
+                <input type="button" value="Explain" onclick="alert
+                      ('Read that Q., and select Yes or No. <Prod. SeungMok>')">
 
       <p>
-        <h2>Verification</h2>
+        <h2 style="color:green;">Verification</h2>
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>Difficulty</h3>
+            <span class = "subject"><h3>Difficulty</h3></span>
               <strong><u>Q. Can it built with just a collection of commonly used exisiting technologies ?</u></strong><br>
                 Yes<input type="checkbox" name="Yes" onclick="alert('Are you sure?')"><br>No<input type="checkbox" name="No"><br>
                 Reason Box<br><input type="text" onchange="alert('Thank you')"> <br><br>
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>Simplicity</h3>
+            <span class = "subject"><h3>Simplicity</h3></span>
               <strong><u>Q. Can it be understood and expained easily to anyone ?</u></strong><br>
-                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>Viral-ness</h3>
+            <span id= "important" class = "subject"><h3>Viral-ness</h3></span>
               <strong><u>Q. Is it something that people will want to tell their friends about ?</u></strong><br>
-                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>Specificity</h3>
+            <span class = "subject>"><h3>Specificity</h3></span>
               <strong><u>Q Does it have a clear target audience?</u></strong><br>
-                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br>
+                Reason Box<br>
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>Profitability</h3>
+            <span class ="subject"><h3>Profitability</h3></span>
               <strong><u>Q. Does it have a reliable way to make money besides ADs?</u></strong><br>
                 Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>Retention</h3>
+            <span id="important" class ="subject"><h3>Retention</h3></span>
               <strong><u>Q. Will it keep people coming back?</u></strong><br>
                 Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>Cost</h3>
+            <span class = "subject"><h3>Cost</h3></span>
               <strong><u>Q. Does this require very little no financial burden to build and maintain ? (on/offline)</u></strong><br>
                 Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No">
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>Future-Proofing</h3>
+            <span id="important" class = "subject"><h3>Future-Proofing</h3></span>
               <strong><u>Q. Is this need likely to keep growing in the future?</u></strong><br>
                 Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>Value</h3>
+            <span id="important" class = "subject"><h3>Value</h3></span>
               <strong><u>Q. Does it provide some positive emotion to the user?</u></strong><br>
                 Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>FOMO ( Fear of missing out )</h3>
+            <span class = "subject"><h3>FOMO ( Fear of missing out )</h3></span>
               <strong><u>Q. Will thie user feel inconvinced by choosing not to install it?</u></strong><br>
                 Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
           ---------------------------------------------------------------------------------------------------------------------
-            <h3>Tipping point</h3>
+            <span class = "subject"><h3>Tipping point</h3></span>
               <strong><u>Q. Can it still be useful before reaching a mass of users?</u></strong><br>
                 Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
           ---------------------------------------------------------------------------------------------------------------------
