@@ -1,113 +1,97 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-      <title>Pent House</title>
-        <style>
-          body{
-            background-color: wheat;
-          }
-          h1{
-            text-align: center;
-            font-size: 5rem;
-            margin-top: 30px;
-          }
-          .message {
-             font-family: monospace;
-             font-size: 2rem;
-             Color:gray;
-             text-align: center;
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+        <title>IWT item CheckPoint</title>
+          <style>
+            .subject{
+              font-weight: bold;
+              color: gray;
+            }
+            #important {
+              font-weight: bold;
+              color:green;
 
-          }
-          .button{
-            font-size: 50px;
-            cursor: pointer;
-            margin: 4px 2px;
-            padding: 15px 32px;
-            display: inline-block;
-            text-decoration: none;
+            }
 
+          </style>
+    </head>
+      <body>
+        <h1 style="background-color : coral; color:powderblue;">IWT CheckPoint 'prod.SeungMok'</h1>
+          <span style="color:coral;">-------------------------------------------</span>
+            <h3 style="background-color : coral; color:black;"><u>Background-Color button : </u></h3>
+              <input type="button" value="Mint" onclick="
+                document.querySelector('body').style.backgroundColor='powderblue';
+                document.querySelector('body').style.color = 'white';">
 
-          }
-          .button2 {
-            font-size: 50px;
-            cursor: pointer;
-          }
-          h2{
-            text-align: center;
-            font-family: monospace;
-          }
-          h3{
-            text-align: center;
-            font-family: sans-serif;
-            font-size: 20px;
-          }
-          .reserve{
-            font-size: 30px;
-          }
-          #text{
-            font-size: 20px;
-          }
+              <input type="button" value="Origin" onclick="
+                document.querySelector('body').style.backgroundColor='white';
+                document.querySelector('body').style.color = 'darkgray';">
+                  <br>
+                  <br>
+                  <span style="color:coral;">-------------------------------------------</span>
+                  <input type="button" value="Explain" onclick="alert
+                        ('Read that Q., and select Yes or No. <Prod. SeungMok>')">
 
-
-
-        </style>
-  </head>
-  <body>
-    <h1 style="background-color: wheat; Color:Mediumturquoise;">
-         <u>PENT HOUSE</u>
-    </h1>
-        <h2 style="font-size:30px; background-color:Mediumturquoise; Color:white;">
-          Pent House 회원감사제
-        </h2>
-          <h3>"고영환 회원님께"</h3>
-          <span class="message">
-            <p>그동안 펜트하우스 신사점을 <br>
-              이용해주신 회원님들께 리모델링 소식과, <br>감사의 인사를 드리고자,<br>
-              <u>
-                <strong>
-                  30만원 상품권
-                </strong>
-              </u>을 선물로 드립니다.
-                <br>
-            </p>
-                  <input type="button"
-                    class="button"
-                    value="사용방법"
-                    onclick="alert('시원하게 30만원을 쏩니다. 매장 방문후 계산시,보여주시면 됩니다. 결제하기 버튼을 눌러주세요 -Pent House-')">
-                  <input type="button"
-                    class="button2"
-                    value="상품권으로 결제"
-                    onclick="alert('좋은시간 되셨습니까?, 고객님의 소중한 발걸음 항상 가슴속에 새기며 살겠습니다.')">
-
-          </span>
-          <br>
-                  <input type="button"
-                         class="reserve"
-                         value="PENT HOUSE 예약하기"
-                         onclick="alert('서비스 준비중입니다.')">
-                      <span style="font-family:monospace; font-size:30px;">주문사항입력:</span>
-                  <input  id="text"
-                        type="text"
-                         onchange="alert('접수 되었습니다. 최선을 다하겠습니다. -PENT HOUSE-')">
-          <br>
-            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxOTA4MjZfMjEg%2FMDAxNTY2ODE0NjUzNDY4.8fNilvz2gQ-1TjX10meqoj7MAwDetI3IEYy7WQ-mwAog.CvBzcSCTW4D7ynmP4SosyOzjFNBm8Ia1yFVHjQrEfkog.PNG%2F%25B7%25D4%25B5%25A5%25B9%25E9%25C8%25AD%25C1%25A1%25BB%25F3%25C7%25B0%25B1%25C7.png&type=sc960_832 ">
-              <br>
-              <br>
-              <br>
-                <h2 style="font-size:30px; background-color:Mediumturquoise; Color:white;">
-                  찾아오시는길
-                </h2>
-                    <div
-                      class="adress"
-                        style="background-color : white;
-                        color: black;
-                        font-family: monospace;
-                        font-size: 30px;">
-                        <u>
-                        주소: 서울 강남구 신사동 539-5 7층
-                        </u>
-                    </div>
+        <p>
+          <h2 style="color:green;">Verification</h2>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span class = "subject"><h3>Difficulty</h3></span>
+              <strong><u>Q. Can it built with just a collection of commonly used exisiting technologies ?</u></strong><br>
+                Yes<input type="checkbox" name="Yes" onclick="alert('Are you sure?')"><br>No<input type="checkbox" name="No"><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"> <br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span class = "subject"><h3>Simplicity</h3></span>
+              <strong><u>Q. Can it be understood and expained easily to anyone ?</u></strong><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span id= "important" class = "subject"><h3>Viral-ness</h3></span>
+              <strong><u>Q. Is it something that people will want to tell their friends about ?</u></strong><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span class = "subject>"><h3>Specificity</h3></span>
+              <strong><u>Q Does it have a clear target audience?</u></strong><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span class ="subject"><h3>Profitability</h3></span>
+              <strong><u>Q. Does it have a reliable way to make money besides ADs?</u></strong><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span id="important" class ="subject"><h3>Retention</h3></span>
+              <strong><u>Q. Will it keep people coming back?</u></strong><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span class = "subject"><h3>Cost</h3></span>
+              <strong><u>Q. Does this require very little no financial burden to build and maintain ? (on/offline)</u></strong><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span id="important" class = "subject"><h3>Future-Proofing</h3></span>
+              <strong><u>Q. Is this need likely to keep growing in the future?</u></strong><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span id="important" class = "subject"><h3>Value</h3></span>
+              <strong><u>Q. Does it provide some positive emotion to the user?</u></strong><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span class = "subject"><h3>FOMO ( Fear of missing out )</h3></span>
+              <strong><u>Q. Will thie user feel inconvinced by choosing not to install it?</u></strong><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+            <span class = "subject"><h3>Tipping point</h3></span>
+              <strong><u>Q. Can it still be useful before reaching a mass of users?</u></strong><br>
+                Yes<input type="checkbox" name="Yes"><br>No<input type="checkbox" name="No"><br><br>
+                Reason Box<br><input type="text" onchange="alert('Thank you')"><br><br>
+          ---------------------------------------------------------------------------------------------------------------------
+      </p>
 
   </body>
 </html>
